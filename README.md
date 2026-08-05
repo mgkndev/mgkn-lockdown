@@ -2,9 +2,9 @@
 
 A lightweight UE4SS-based script for Lockdown Protocol. Gives you server-validated item giving, heal, and ammo features — works whether you're hosting or joining.
 
-> \*\*Note:\*\* Use this in lobbies you host or play in with friends, or when testing solo. Using it in a public lobby with people who haven't agreed to it isn't fair to them, and can get you kicked or banned.
+> **Note:** Use this in lobbies you host or play in with friends, or when testing solo. Using it in a public lobby with people who haven't agreed to it isn't fair to them, and can get you kicked or banned.
 
-\---
+---
 
 ## Requirements
 
@@ -12,11 +12,11 @@ A lightweight UE4SS-based script for Lockdown Protocol. Gives you server-validat
 * `ue4ss.zip` from this repo (signed UE4SS build for Lockdown Protocol)
 * `mgkn.zip` from this repo
 
-\---
+---
 
 ## Installation
 
-### 1\) Install UE4SS
+### 1 ) Install UE4SS
 
 1. Download `ue4ss.zip` from this repo and extract it.
 2. Copy its contents (the `ue4ss` folder/files and `dwmapi.dll`) into:
@@ -27,7 +27,7 @@ A lightweight UE4SS-based script for Lockdown Protocol. Gives you server-validat
 
 3. Launch the game once, let it reach the main menu, then close it. This lets UE4SS generate its initial files (logs, `Mods` folder, `mods.txt`, etc.).
 
-### 2\) Add the mgkn script
+### 2 ) Add the mgkn script
 
 1. Download `mgkn.zip` and extract the `mgkn` folder inside it.
 2. Copy the `mgkn` folder into:
@@ -56,7 +56,7 @@ A lightweight UE4SS-based script for Lockdown Protocol. Gives you server-validat
    ConsoleEnablerMod : 1
    SplitScreenMod : 0
    LineTraceMod : 1
-   BPML\_GenericFunctions : 1
+   BPML_GenericFunctions : 1
    BPModLoaderMod : 1
    mgkn : 1
 
@@ -64,16 +64,16 @@ A lightweight UE4SS-based script for Lockdown Protocol. Gives you server-validat
    Keybinds : 1
    ```
 
-### 3\) Launch the game
+### 3 ) Launch the game
 
 1. Start Lockdown Protocol.
-2. In-game, press **F10** or **`\~`** (tilde) to open the UE4SS console.
+2. In-game, press **F10** or **`~`** (tilde) to open the UE4SS console.
 
    * If F10 is mapped to a media key (volume/brightness) on your laptop, try `Fn + F10`.
-   * If neither opens it, try `\~`.
+   * If neither opens it, try `~`.
 3. Once the console is open, type `debug` and press Enter. If it prints your character's name, the install worked.
 
-\---
+---
 
 ## Commands
 
@@ -122,7 +122,7 @@ Example: `rif 2` → gives a rifle with variant 2.
 |-|-|
 |`debug`|Prints your character's full name to the console (useful to confirm install worked)|
 
-\---
+---
 
 ## Troubleshooting
 
@@ -133,12 +133,12 @@ This script doesn't use event hooks (no god mode, no automatic death/item event 
 The game may have received an update that changed the item's asset path. In that case the `ItemMap` table in `main.lua` needs updating.
 
 **F10 doesn't open the console:**
-Try `\~` (tilde). If that still doesn't work, check your laptop's F-Lock/Fn setting.
+Try `~` (tilde). If that still doesn't work, check your laptop's F-Lock/Fn setting.
 
 **Items don't work but heal does:**
 The `Set Hand Item` / `Net Take Item` function names may have changed in a game update — the script would need updating in that case.
 
-\---
+---
 
 ## Disclaimer
 
